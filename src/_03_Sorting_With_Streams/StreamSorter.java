@@ -13,10 +13,13 @@ public class StreamSorter {
 		}
 		
 		//1. Convert the Integer array to Stream object.
-		
+		Stream<Integer> intStream = Arrays.stream(nums);
 		//2. Use the sorted method of the stream to sort the numbers.
-		
+		intStream=intStream.sorted();
 		//3. Use the forEach method with a lambda to print all the elements of the sorted Stream.
 		//   They should be in ascending order.
+		intStream.forEach((e)->{
+			System.out.println(e);
+		});
 	}
 }
